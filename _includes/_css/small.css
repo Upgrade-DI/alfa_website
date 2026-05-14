@@ -3,3 +3,17 @@ CSS para pantallas pequeñas (Móviles)
 Ultima modificación por:
 Fecha:
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+
+#logo {
+    width: 250px;
+    margin: 30px auto 20px auto;
+}
+
+.header-content h1 {font-size: 2em; margin: 20% 10px 10% 10px;}
+
+nav {
+    flex-direction: column;    
+}
+
+nav a { margin: 10px auto; }
