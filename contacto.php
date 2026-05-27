@@ -27,7 +27,7 @@
         </div>
 
         <div id="Mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.053963413912!2d-106.12989482360089!3d28.5981578856393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5d6e16349bdf%3A0xf7a5f239e06de6c6!2sPlaza%20Travessia!5e0!3m2!1ses-419!2smx!4v1711476311300!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.204651834962!2d-106.09527913038329!3d28.66514949847793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5d4beb64d3ad%3A0xd0dfd253fe28fb85!2sALFA%20Escuela%20Profesional%20de%20Manejo!5e0!3m2!1ses-419!2smx!4v1779910288478!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         
         <div class="net-ct">
