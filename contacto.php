@@ -1,59 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <meta name="keywords" content="Escuela de manejo, Curso de manejo principiantes, Clases de conducción intermedias, Capacitación de manejo masivo, Educación vial, Licencia de conducir, Conducción segura, Instrucción automovilística, Manejo defensivo, Certificación de conductor"/>
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ALFA Escuela Profesional de Manejo" />
+    <meta property="og:description" content="Escuela de manejo ALFA: Ofrecemos cursos de manejo personalizados para todos los niveles, desde principiantes hasta conductores experimentados que buscan mejorar sus habilidades." />
+    <meta property="og:image" content="" />
+
+    <?php include_once("phpAssets/head.php"); ?>
+
     <title>Contacto</title>
 </head>
 <body>
-<?php include_once("PhpAssets/header.php"); ?>
+<?php include_once("phpAssets/analytics.php"); ?>
+<?php include_once("phpAssets/header.php"); ?>
 
 <!-- Contenedor principal -->
 <div id="formulario">
     <div id="MiniBlocBlue">
-        <div><h1 id="OrgTitle">C&nbsp;O&nbsp;N&nbsp;T&nbsp;Á&nbsp;C&nbsp;T&nbsp;A&nbsp;N&nbsp;O&nbsp;S</h1></div>
+        <div><h1 id="OrgTitle">Contáctanos</h1></div>
         <div id="NewLogos">
-            <div>
-                <img class="LogosNeutro" src="PhoneLogo.svg" alt="Phone"><div class="AcompaLogo">614 178 60 32</div>
-            </div>
-            <div>
-                <img class="LogosNeutro" src="MailLogo.svg" alt="Mail"><div class="AcompaLogo">a.escobedo@cpiseguridad.com.mx</div>
-            </div>
-            <div>
-                <img class="LogosNeutro" src="UbiLogo.svg" alt="Ubicacion"><div class="AcompaLogo">Plaza Comercial Travessia Av. Teófilo Borunda No 11811</div>
+            <a href="tel:6141399922"><img src="_images/PhoneLogo.svg" alt="Phone">614 139 99 22</a>
+            <a href="mailto:a.escobedo@cpiseguridad.com.mx" class="AcompaLogo"><img src="_images/MailLogo.svg" alt="Mail">a.escobedo@cpiseguridad.com.mx</a>
+            <p><img src="_images/UbiLogo.svg" alt="Ubicacion">Plaza Comercial Travessia <br> Av. Teófilo Borunda No 11811</p>
+        </div>
+
+        <div id="Mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.053963413912!2d-106.12989482360089!3d28.5981578856393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5d6e16349bdf%3A0xf7a5f239e06de6c6!2sPlaza%20Travessia!5e0!3m2!1ses-419!2smx!4v1711476311300!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="net-ct">
+            <img id="Minilogo" src="_images/MiniLogo.svg" alt="Lg">
+            <div id="CompilacionLogosNaranjas">
+                <a href="" class="button"><img src="_images/InstaOra.svg" alt="Instagram"></a>
+                <a href="" class="button"><img src="_images/FaceOra.svg" alt="Facebook"></a>
+                <a href="" class="button"><img src="_images/TikTokOra.svg" alt="TikTok"></a>
+                <a href="" class="button"><img src="_images/YoutubeOra.svg" alt="YouTube"></a>
             </div>
         </div>
-        <div><img id="Mapa" src="Maps.svg" alt="Mapas"></div>
-        <div><img id="Minilogo" src="MiniLogo.svg" alt="Lg"></div>
-        <div id="CompilacionLogosNaranjas">
-		    <a href="#" class="button"><img src="InstaOra.svg" alt="Instagram"></a>
-		    <a href="#" class="button"><img src="FaceOra.svg" alt="Facebook" style="margin: 0px 22px 0px 24px;"></a>
-		    <a href="#" class="button"><img src="TikTokOra.svg" alt="TikTok" style="margin: 0px 20px 0px 10px;"></a>
-		    <a href="#" class="button"><img src="YoutubeOra.svg" alt="YouTube"></a>
-	    </div>
     </div>
-    <div>
-        <form id="lario">
-            <label for="fullname" class="form">Nombre Completo*</label><br>
-            <input type="text" class="Rellenar" name="fullname"><br>
-            <label for="phone" class="form">Teléfono*</label><br>
-            <input type="tel" class="Rellenar" name="phone"><br>
-            <label for="email" class="form">Correo electrónico*</label><br>
-            <input type="email" class="Rellenar" name="email"><br>
-            <label for="birthdate" class="form">Fecha de nacimiento*</label><br>
-            <input type="date" class="Rellenar" name="birthdate"><br>
-            <label for="age" class="form">Edad:*</label><br>
-            <input type="number" class="Rellenar" name="age"><br>
-            <label for="message" class="form">Mensaje:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input id="enter" type="submit" value="ENVIAR">
+    <div class="form-container">
+    <?php if(!$_GET['message']){  ?>
+        <form id="form-contact" action="c-ok.php" method="post">
+            <div class="ct-input"><label for="name" class="form">Nombre Completo*</label><input type="text" class="Rellenar" name="name"></div>
+            
+            <div class="align-input">
+                <div class="ct-input"><label for="phone" class="form">Teléfono*</label><input type="number" class="Rellenar" name="phone"></div>
+                <div class="ct-input"><label for="email" class="form">Correo electrónico*</label><input type="email" class="Rellenar" name="email"></div>
+            </div>
+            
+            <div class="align-input">
+                <div class="ct-input"><label for="birthdate" class="form">Fecha de nacimiento*</label><input type="date" class="Rellenar" name="birthdate"></div>
+                <div class="ct-input"><label for="age" class="form">Edad:*</label><input type="number" class="Rellenar" name="age"></div>
+            </div>
+            
+            <div class="ct-input"><label for="message" class="form">Mensaje:</label><textarea id="message" name="message"></textarea></div>
+
+            <input type="hidden" name="MMinsert" value="runContacto"/>
+            <button id="enter" type="submit">ENVIAR</button>
         </form>
+    <?php }else{ ?> 
+            <div id="message_container">
+                <p><span>Gracias</span> por contactarnos,<br>en breve nos comunicaremos.</p>
+            </div>
+        <?php } ?> 
     </div>
 </div>
 
-<?php include_once("PhpAssets/footer.php"); ?>
+<?php include_once("phpAssets/footer.php"); ?>
 
 </body>
 </html>

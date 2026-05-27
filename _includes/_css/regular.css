@@ -1,0 +1,36 @@
+/* ----- cards ----- */
+#SECOND-container { gap: 3%;}
+.OrangBloc {
+    width: 30%;
+}
+.card-back ul{
+    padding-left: 20px;
+}
+#formulario {
+    width: 80%;
+}
+#NewLogos {
+    width: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #TextoS {
+        font-size: 1.5em;
+    }
+    .OrangBloc {
+        width: 40%;
+    }
+    #SECOND-container {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    #THIRD-container {
+        gap: 30px;
+        transform: scale(.9);
+    }
+    #formulario, #NewLogos {
+        width: 90%;
+    }
+
+    
+}

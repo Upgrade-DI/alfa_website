@@ -3,5 +3,114 @@ CSS para pantallas medianas (Tablets)
 Ultima modificación por:
 Fecha:
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+header {
+    height: 700px;
+    padding: 100px 0 70px;
+    background-image: url(../../_images/header-resp.jpg);
+}
+nav{
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
 
+}
 
+#logo {margin: auto;}
+#icon-wp img{ width: 72px;}
+
+nav a {
+    width: fit-content;
+    margin: 0;
+    padding: 10px 60px;
+}
+.FIRST-container {
+    flex-direction: column-reverse;
+}
+#bloc {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.myButton {font-size: 1.2em;}
+#imagen-container { width: 100%;}
+#TextoXS {
+    width: 80%;
+}
+#SECOND-container {
+    flex-direction: column;
+    gap: 50px;
+}
+.OrangBloc {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+}
+.card-front {flex-direction: row; gap: 10px;}
+.Txtbloc {width: 60%;}
+.card-back .Logos {
+    width: 35px;
+}
+.OrangBloc .Logos {
+    width: 10%;
+}
+#TxtCirc {
+    width: 80%;
+}
+#THIRD-container {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* contacto */
+#formulario {
+    width: 90%;
+    flex-direction: column;
+}
+#MiniBlocBlue {
+    width: 100%;
+}
+.form-container {
+    width: 100%;
+    padding: 80px 0;
+}
+
+/* footer */
+#CompilacionLogos {
+    transform: scale(1.3);
+}
+#MiniAzul {
+    width: 50%;
+    margin: auto;
+}
+#LinksPag {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+}
+#Links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+#Ref {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Aviso de privacidad*/
+.align-txt h1 {
+    width: 80%;
+    text-align: center;
+}
+
+.align-txt h6 {
+    width: 80%;
+}
+
+.align-txt p,
+.align-txt ul,
+.align-txt ol {
+    width: 80%;
+}

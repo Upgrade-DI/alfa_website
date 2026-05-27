@@ -10,10 +10,182 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
     margin: 30px auto 20px auto;
 }
 
-.header-content h1 {font-size: 2em; margin: 20% 10px 10% 10px;}
+.header-content h1 {font-size: 1.5em;}
 
 nav {
     flex-direction: column;    
 }
 
 nav a { margin: 10px auto; }
+
+/* ---- */
+
+header {
+    height: 600px;
+    padding: 30px 0 60px;
+    background-image: url(../../_images/header-resp.jpg);
+}
+nav{
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+}
+
+#logo {margin: auto;}
+
+nav a {
+    width: fit-content;
+    margin: 0;
+    padding: 8px 60px;
+    font-size: 1em;
+}
+
+.FIRST-container {
+    flex-direction: column-reverse;
+}
+.TitulosG {font-size: 5em;}
+#TextoS {font-size: 1.2em;}
+
+#bloc {
+    padding: 0 30px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+}
+.myButton {font-size: .8em;}
+#imagen-container { width: 100%; height: 400px;}
+.BlueBloc {height: 450px;}
+#TextoXS {
+    width: 80%;
+    font-size: 1em;
+}
+#TituloG2, #BlueTxt  { font-size: 1.5em;}
+#NegroTxt {
+    width: 80%;
+    font-size: 1em;
+}
+
+#blueBloc2 {
+    flex-direction: column-reverse;
+}
+#circulito {
+    width: auto;
+    left: -17%;
+}
+#img-car {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+#Real {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    right: 0;
+}
+#text-car {width: 100%;}
+#SECOND-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+}
+.OrangBloc {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+}
+.card-back {font-size: .9em;}
+.card-front {gap: 10px;}
+.Txtbloc {width: 80%; font-size: 1.5em;}
+.card-back .Logos {
+    width: 35px;
+}
+.OrangBloc .Logos {
+    width: 15%;
+}
+#TxtCirc {
+    width: 85%;
+    margin: auto;
+    font-size: 1em;
+    text-align: center;
+    transform: none;
+}
+#THIRD-container {
+    flex-wrap: wrap;
+    gap: 30px;
+    transform: scale(.8);
+    padding: 0;
+}
+#OrgTitle {font-size: 1.5em;}
+
+/* contacto */
+#formulario {
+    width: 90%;
+    flex-direction: column;
+    margin: 40px auto;
+}
+#MiniBlocBlue {
+    width: 100%;
+}
+.form-container {
+    width: 100%;
+    padding: 80px 0;
+}
+.align-input {
+    flex-direction: column;
+}
+#form-contact, #NewLogos, #Mapa {
+    width: 90%;
+}
+#message_container p{
+    font-size: 1em;
+}
+
+/* footer */
+footer {
+    font-size: smaller;
+}
+
+#MiniAzul {
+    width: 70%;
+    margin: auto;
+}
+#LinksPag {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+}
+#Links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+#Ref {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Aviso de privacidad*/
+
+.align-txt h1 {
+    margin: 25px auto;
+    font-size: 2em;
+}
+
+.align-txt h6 {
+    font-size: 1.1em;
+}
+
+.align-txt p,
+.align-txt ul,
+.align-txt ol {
+    font-size: 1em;
+}
